@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/iphone_pro.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../script/jquery-3.6.0.min.js"></script>
+    <script src="../script/bootstrap.min.js"></script>
+    <script src="../script/cart.js"></script>
+    <script src="../script/remove_product.js" async></script>
+
+    <style>
+        .dialog{
+            visibility: hidden;
+        }
+        .dialog:target{
+            visibility: visible;
+        }
+        .dialog-body{
+            background-color: #ccc;
+            height: 100px;
+            width: 500px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        h3{
+           
+        }
+        h3{
+            position: relative;
+            margin: 0px auto;
+            margin-bottom: 7px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 2em; 
+            margin-top: 15px;
+            letter-spacing: 5px;
+            /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0008); */
+            line-height: 0.9em;
+            outline: none;
+            animation: animate1 5s linear infinite;
+            line-height: 100px; 
+            font-weight: bold; 
+            }
+        @keyframes animate1{
+            0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+            {
+                color:#0e3742;
+                text-shadow: none;
+            }
+            18.2%,20%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+            {
+                color:#fff;
+                text-shadow: 0 0 10px red,
+                0 0 20px red,
+                0 0 40px #03bcf4,
+                0 0 80px #03bcf4,
+                0 0 160px #03bcf4;
+            }
+}
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="../img/Gia-Huy-unscreen.gif" alt="" style="height:150px; margin-top: -25px; width: 180px;">
+            <ul class="supmenu" >
+                <li><a href="../html/menu.html">Home <i class="fa-solid fa-house-crack"></i>  </li></a> 
+                <li><a href="#" id="product">Product <i id="icon-up" class="fa fa-chevron-up" aria-hidden="true"></i></a>
+                    <ul class=sub-menu>
+                        <li><a href="../html/Iphone.html">Iphone</a></li>
+                        <li><a href="../html/samsung.html">Samsung</a></li>
+                        <li><a href="../html/accessory.html">Phụ kiện</a></li>  
+                    </ul>
+                </li>
+                <li><a href="../html/sitemap.html">SiteMap <i class="fa-solid fa-earth-africa"></i> </a></li>
+                <li><a href="../html/intro.html">About Us <i class="fa-solid fa-circle-info"></i>  </a></li>
+                <li><a href="../html/contact.html">Contact <i class="fa-solid fa-mobile-screen-button"></i> </i></a></li> 
+                <li><a href="../html/member.html">Member <i class="fa-brands fa-github"></i> </a></li>     
+
+            </ul>
+            <!-- Icon -->
+            <div >
+                <ul class="icon-menu">
+                    <li><a href=""><i class="fa-solid fa-cart-arrow-down" style="position: absolute; top: 30px; right: 70px;"></i>  </a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass" style="position: absolute; top: 30px; right: 140px;"></i> </a></li>
+                    <li><a href="../html/formlogin.html"><i class="fa-solid fa-user-astronaut" style="position: absolute; top: 30px; right: 210px;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </header>
+
+    <section class="container" style="margin-top: 200px; ">
+        <table class="table table-striped align-middle" id="table" style="z-index: -1;">
+            <thead class="thead-light" style="z-index: -1;">
+              <tr>
+                <th>STT</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+              </tr>
+            </thead >
+
+            <tbody id="tbody" style="z-index: -1;">
+                <tr>
+                    <td>1</td>
+                    <td>Iphone 14 Pro 128GB
+                        <img src="../img/pro1.png" alt="">
+                    </td>
+                    <td>
+                        <p id="dongia"> 22690000 </p>
+                      </td>
+                    <td><input onblur="tinhtien()" type="number" name="" id="soluong" min="1" value="1"
+                        style="width: 50px;">
+                        <button class="btn btn-danger" type="button">Xóa</button>
+
+                    </td>
+                    
+                </tr>
+                <tr style="background-color: rgb(211, 92, 92);">
+                    <td></td>            
+                    <td></td>
+                    <td> <strong>Tổng Tiền </strong> </td>
+                    <td> <strong ><span id="thanhtien"></span> </strong> </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+       
+
+        <a href="#my-dialog"><button type="button" onclick="myFunction()" class=" btn btn-primary" style="margin-left: 1000px;"> Đặt hàng</button></a>
+        
+        <div class="dialog overlay" id="my-dialog">
+            <div class="dialog-body">
+                <h3>Đặt hàng thành công</h3>
+            </div>
+
+        </div>
+          
+
+    </section>
+
+
+
+
+    <footer  id="box">
+
+        <div class="container text-center text-md-left a" >
+            <div class="row text-md-left ">
+                <h3 id="nameShop">
+                    GiaHuy Mobile Store
+                </h3>
+            </div>
+
+            <div class=" row text-center text-md-left mt-4" >
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">Thông tin liên hiện</h5>
+                    <p> 
+                        <img src="../img/map.png" alt="">
+                        12, Nguyễn Văn Bảo, Gò Vấp, Hồ Chí Minh <br> <br>
+                        <img src="../img/alarm-clock.png" alt=""> 
+                        Giờ mở cửa: 8h-22h hằng ngày <br>  <br>
+                        <img src="../img/telephone.png" alt="">
+                        Phone: 0939730113
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">Thông tin liên kết</h5>
+                    <p>
+                        <span>Hãy liên kết với chúng tôi</span> <br> <br>
+                        <a style="margin-right: 25px;" href="https://www.facebook.com/profile.php?id=100060670446012"><img src="../img/facebook.png" alt=""></a>
+                        <a style="margin-right: 25px;" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fconrongmongmanh%2F%3Ffbclid%3DIwAR3N1YxfYemrZ906z0f7XplujUaUmux6nHoul8bzTUxcvY08dM00YRVTj5k&h=AT2YU2IStpVLdws2JeczLa6vsqBK9U806o3tyXBBlYqUDF-JuCrNwpJsiHmhN_P_qE83kJaF3pJTsHjQyWYvE9Vv7O1zHSy9dUoCs5g-M84nuLvP4vI-WAq30puTtsGCwvgSCj4FMghUYIW8ImrMJA"> <img src="../img/instagram.png" alt=""> </a>
+                        <a  href="mailto:phamhagiahuy1708@gmail.com"> <img src="../img/gmail.png" alt=""> </a>
+                        
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Chính sách đổi trả</h5>
+                    <p> 
+                        <ul>
+                            <li>1 đổi 1 trong 30 ngày nếu sản phẩm lỗi </li>
+                            <li>Bảo hành 2 năm</li>
+                            <li>Trả</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Huy Apple Store</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../script/icondown.js"></script>
+
+</html>

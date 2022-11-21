@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/cart_menu.css">
+    <link rel="stylesheet" href="../css/search-list.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../script/bootstrap.min.js"></script>
+    <script src="../script/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/sitemap.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img src="../img/Gia-Huy-unscreen.gif" alt="" style="height:150px; margin-top: -25px; width: 180px;">
+            <ul class="supmenu" >
+                <li><a href="../html/menu.html">Home <i class="fa-solid fa-house-crack"></i>  </li></a> 
+                <li><a href="../html/menu.html" id="product">Product <i id="icon-up" class="fa fa-chevron-up" aria-hidden="true"></i></a>
+                    <ul class=sub-menu>
+                        <li><a href="../html/Iphone.html">Iphone</a></li>
+                        <li><a href="../html/samsung.html">SamSung</a></li>
+                        <li><a href="../html/accessory.html">Phụ kiện</a></li>  
+                    </ul>
+                </li>
+                <script src="../script/icondown.js"></script>
+                <li><a href="../html/sitemap.html">SiteMap <i class="fa-solid fa-earth-africa"></i> </a></li>
+                <li><a href="../html/intro.html">About Us <i class="fa-solid fa-circle-info"></i>  </a></li>
+                <li><a href="../html/contact.html">Contact <i class="fa-solid fa-mobile-screen-button"></i></a></li>   
+                <li><a href="../html/member.html">Member <i class="fa-brands fa-github"></i> </a></li>     
+
+            </ul>
+            <!-- Icon -->
+            <div >
+                <ul class="icon-menu">
+                    <!-- Giỏ hàng -->
+                    <li class="header-bag">
+                        <a href="../html/cart.html">
+                            <i class="fa-solid fa-cart-arrow-down cart" ></i>  
+                            <span class="header-bag-notice">0</span>
+                        </a>
+                        <div class="header-bag-list header-bag-list-no-bag">
+                            <img src="../img/shopping-bag.png" class="shopping-bag" alt="">
+                            <span class="shopping-bag-msg">Chưa có sản phẩm</span>
+                        </div>
+                        
+                    </li>
+                    <!-- Tìm kiếm -->
+                    <li class="icon-search">
+                        <a href="#" >
+                            <i class="fa-solid fa-magnifying-glass search" id="icon-search"></i>
+                            <ul id="search-list" >
+                                <input type="text" placeholder="Tìm kiếm" id="search">
+                                <button id="btnSearch" style="width: 50px;"> Tìm </button>
+                            </ul> 
+                        </a>
+                    </li>
+                    
+                    <!-- Login -->
+                    <li>
+                        <a href="../html/formlogin.html">
+                            <i class="fa-solid fa-user-astronaut login"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <p class="content" style="margin-top: 150px;">Site Map</p>
+    <section class="service">
+        <div class="container">
+            <div class="content">
+                <a href="../html/menu.html">
+                    <div class="box">
+                        <div class="inner">
+                            <div class="icon"><i class="fa-solid fa-house"></i></div>
+                            <h3>Home</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../html/iphone.html" style="text-decoration: none;">
+                    <div class="box" id="box">
+                        <div class="inner">
+                            <div class="icon"><i class="fa-solid fa-mobile"></i></div>
+                            <h3 style="font-weight: bold; color: black">Product</h3>
+                        </div>
+                        <div class="submenu">
+                            <a class="pro" href="../html/iphone.html">Iphone</a> 
+                            <a class="pro" href="../html/samsung.html">Samsung</a> 
+                            <a class="pro" href="../html/accessory.html">Phụ kiện</a> 
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../html/intro.html">
+                    <div class="box">
+                        <div class="inner">
+                            <div class="icon"><i class="fa-sharp fa-solid fa-circle-info"></i></div>
+                            <h3>About Us</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="../html/contact.html">
+                    <div class="box">
+                        <div class="inner">
+                            <div class="icon"><i class="fa-solid fa-address-book"></i></div>
+                            <h3>Contact</h3>
+
+                        </div>
+                    </div>
+                </a>
+                <a href="../html/menu.html">
+                    <div class="box">
+                        <div class="inner">
+                            <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                            <h3>Cart</h3>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

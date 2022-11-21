@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Cousine Regular", sans-serif;
+    
+}
+header{
+    width: 100%;
+    height:100px;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 36px 10px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    top: 0px;  
+    z-index: 100000; 
+    background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+body{
+    background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    /* background-image: linear-gradient(to left top, #148dff, #2c83ff, #4777ff, #606aff, #7959ff, #9d4bf5, #bb37e8, #d317d9, #ea0ebe, #f723a6, #fe3b91, #fe5281);  */
+    /* background-image: linear-gradient(to left top, #522387, #55248b, #582690, #5c2794, #5f2899, #652f9e, #6c36a3, #723da8, #7c4aaf, #8657b6, #9064bd, #9a71c4); */
+    background-size: contain;
+    background-repeat:none;
+    /* height: 104.5vh;   */
+}
+section{
+    width: 100%;
+    margin-bottom: 50px;
+    /* height: 00vh; */
+}
+#slider{
+    position: relative; 
+    top: 50px;
+    width: 100%;
+    height: 200px;
+}
+ul.supmenu{
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 20px;
+    left:18%;
+}
+ul.supmenu li{
+    float: left;
+    list-style: none;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    
+}
+ul.supmenu li a{
+    font-weight: bold;
+    margin-right: 30px;
+    /* background: black; */
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+ul.supmenu> li >a:hover{
+    color: #9A71C4;
+}
+ul.supmenu> li >a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    border-bottom:1px solid black; 
+    border-top:1px solid black; 
+    transform: scaleY(2);
+    opacity: 0;
+    transition: .5s;
+    z-index: -1;
+}
+ul.supmenu> li >a:hover:before{
+    transform: scaleY(1);
+    opacity: 0.5;
+}
+ul.supmenu> li >a:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #000; */
+    transform: scale(0);
+    transition: .5s;
+    z-index: -1;
+}
+
+ul.supmenu> li >a:hover:after{
+    transform: scale(1);
+}
+/* Menu con */
+ul.sub-menu{
+    transform: translate(-0%, -5%);
+    width: 80px;
+    min-height: 60px;
+    display: none;
+    position: absolute;
+    top: 50px;
+    left:0px;
+}
+ul.sub-menu li{
+    list-style: none;
+    margin-top: -5px;
+}
+ul.sub-menu li a{
+    letter-spacing: 6px;
+    position: relative;
+    left: -20px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 110px;
+    text-indent: 0px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    transition: .5s;
+    font-weight: bold;
+    margin-top: -10px;
+    height:50px;
+    line-height: 60px;
+}
+ul.supmenu>li:hover ul.sub-menu{
+    display: block;
+}
+ul.sub-menu>li:hover{
+    /* background-color: #41dfff; */
+    
+}
+ul.sub-menu>li>a:hover{
+    filter: blur(50px);
+}
+/* hiệu ứng menu */
+.sub-menu>li >a{
+    position: relative;
+    display: inline-block;
+    color:#2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: .2s;
+}
+.supmenu>li:hover{
+    font-weight: bold;
+    color: #f3f3f3;
+    background: 	#00FFFF;
+    box-shadow: 0 0 10px 	#00FFFF, 0 0 40px 	#00FFFF, 0 0 80px	#00FFFF;
+    transition-delay: 0.1s;
+}
+/* Icon menu */
+.icon-menu li a i{
+    position: absolute;
+}
+.icon-menu li a i.cart{
+    top: 30px; 
+    right: 70px;
+}
+.icon-menu li a i.search{
+    top: 30px; 
+    right: 140px;
+}
+.icon-menu li a i.login{
+    top: 30px; 
+    right: 210px;
+}
+
+#search-list{
+    display: none;
+}
+
+
+
+
+
+/* Hieu ung icon menu */
+.icon-menu i{
+    color: #fff;
+}
+.icon-menu i:hover{
+    /* font-size: 30px; */
+    transition: 0.5s;
+    color:#00FFFF;
+    text-shadow: 0 0 10px #00FFFF, 0 0 40px #00FFFF, 0 0 80px #2196f3;
+}
+/* chỉnh lại kích thước của li.cart */
+li.header-bag{
+    height: 0px;
+    width: 0px;
+}
+
+

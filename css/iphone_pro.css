@@ -1,0 +1,117 @@
+/* tất cả sản phẩm */
+#check{
+    margin-left: 200px; 
+    border: 1px solid rgb(142, 211, 211); 
+    box-shadow:0 0px  10px 3px white;   
+}
+.product{
+    margin-top: 100px;
+}
+/* Tùng sản phẩm */
+.iphone{
+    box-shadow:0 0px  10px 0px black;   
+
+    border-radius: 15px;
+    background-image: linear-gradient(to left top, #148dff, #2c83ff, #4777ff, #606aff, #7959ff, #9d4bf5, #bb37e8, #d317d9, #ea0ebe, #f723a6, #fe3b91, #fe5281);; margin-left: 50px;
+}
+.iphone:nth-child(2),
+.iphone:nth-child(3),
+.iphone:nth-child(4)
+{
+    margin-left: 50px;
+}
+/* Thong tin sản phẩm */
+.iphone>ul{
+    text-transform: uppercase;
+    margin-left: 20px; 
+    margin-top: 20px;
+}
+.iphone>ul>li{
+    color: #fff;
+    
+}
+.iphone>ul>li>i.star{
+    color: yellow;
+}
+.iphone>ul>li>a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+}
+.iphone>ul>li>a>i.cart{
+    margin-left: 0px;
+    font-size: 13px;
+    color: #fff;
+}
+.iphone>ul>li.cart{
+    text-transform: none;
+}
+.iphone>ul>li:hover{
+    color: black;
+}
+.iphone>ul>li>i.cart:hover{
+    font-size: 20px;
+   transition: 0.3s;
+   color: black;
+}
+
+.iphone>ul>li>a:hover{
+    color: black;
+}
+.iphone>ul>li>a>i.cart:hover{
+    font-size: 20px;
+   transition: 0.3s;
+   color: black;
+}
+
+
+
+.img{
+        overflow: hidden;
+}
+.cc{
+    /* width: 100%; */
+    transition: all .4s ease-in-out;
+    opacity: 1;
+    
+}
+.text{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: absolute;
+    top:0px;
+    transition: all 0.4s ease-in-out;
+    background-image: linear-gradient(to left top, #148dff, #2c83ff, #4777ff, #606aff, #7959ff, #9d4bf5, #bb37e8, #d317d9, #ea0ebe, #f723a6, #fe3b91, #fe5281);
+    border: 1.6px solid aqua;
+    box-shadow: 0 0 10px white;
+    padding: 55px;
+    box-sizing: border-box;
+    width: 18.2%;
+    height: 50%;
+    line-height: 20px;
+    transform: scale(0);
+    transition-delay: .2s;
+    opacity: 0;
+    color:white; 
+    font-size: 13px; 
+    font-weight: 700;
+}
+.img:hover p{
+    opacity: 0.7;
+    transform: scale(1); 
+    bottom: 0;
+    height: 50%;
+}
+.img:hover img{
+    opacity: 0;
+    transform: scale(0); 
+}
+
+.icon-info{
+    margin-left: -50px;
+    color: black;
+}
+.text-info{
+    font-size: 13px;
+    color: white;
+}

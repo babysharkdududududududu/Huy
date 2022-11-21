@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #111;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .ring{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: -30px;
+            border-radius: 50%;
+            border: 4px solid transparent;
+            border-top: 4px solid #24ecff;
+            animation: aminate 3s linear infinite ;
+        }
+        @keyframes aminate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes aminate2 {
+            0%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+        .container .ring:nth-child(2)::before{
+            content: '';
+            top: initial;
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            width: 15px;
+            height: 15px;
+            background: #93ff2d;
+            border-radius: 50%;
+            box-shadow: 0 0 0 5px #93ff2d33,
+            0 0 0 10px #93ff2d22,
+            0 0 0 20px #93ff2d11,
+            0 0 20px #93ff2d,
+            0 0 20px #93ff2d;
+        }
+        
+        .container .ring:nth-child(2){
+            animation: aminate2 3s linear infinite;
+            border-left: 4px solid #93ff2d;
+            border-top: 4px solid transparent;
+            animation-delay: -1s;
+        }
+        .container .ring::before{
+            content: '';
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 12px;
+            height: 12px;
+            background: #24ecff;
+            border-radius: 60%;
+            box-shadow: 0 0 0 5px #24ecff33,
+            0 0 0 10px #24ecff22,
+            0 0 0 20px #24ecff11,
+            0 0 20px #24ecff,
+            0 0 50px #24ecff;
+        }
+        
+        .container .ring:nth-child(3){
+            animation: aminate2 3s linear infinite;
+            animation-delay: -3s;
+            position: absolute;
+            top: -66.66px;
+            border-top: 4px solid transparent;
+            border-left: 4px solid #e41cf8;
+        }
+        .container .ring:nth-child(3)::before{
+            content: '';
+            top: initial;
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            width: 15px;
+            height: 15px;
+            background: #e41cf8;
+            border-radius: 50%;
+            box-shadow: 0 0 0 5px #24ecff33,
+            0 0 0 10px #e41cf822,
+            0 0 0 20px #e41cf811,
+            0 0 20px #e41cf8,
+            0 0 20px #e41cf8;
+        }
+        .container p{
+            position: absolute;
+            color: #fff;
+            font-size: 1.7em;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            bottom: -80px;
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            color: #93ff2d;
+            animation: typing 10s steps(10) infinite;
+            overflow: hidden;
+        }
+        @keyframes typing{
+            0%,90%, 100%{
+                width: 30px;
+            }
+            30%, 60%{
+                width: 295.88px;
+            }
+
+        }
+        .loader{
+            position: relative;
+            -webkit-box-reflect: below 25px linear-gradient(transparent, #0002);
+        }
+        .loader::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: #93ff2d;
+            animation: loading 0.8s steps(1) infinite;
+        }
+        @keyframes loading {
+            0%,0.75%{
+                opacity: 1;
+            }
+            76%,100%{
+                opacity: 0;
+
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <p class="loader"> <span class="load"> Loading...</span></p>
+    </div>
+</body>
+    <script>
+        setTimeout(function(){
+            window.location.href = "../html/menu.html"
+        }, 3000)
+    </script>
+</html>

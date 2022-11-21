@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/sadboiz.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/cart_menu.css">
+    <link rel="stylesheet" href="../css/iphone_pro.css">
+    <link rel="stylesheet" href="../css/search-list.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/CTSP.css">
+
+
+    <script src="../script/icondown.js"></script>
+    <script src="../script/jquery-3.6.0.min.js"></script>
+    <script src="../script/bootstrap.min.js"></script>
+    <script src="../script/btnSearch.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img src="../img/Gia-Huy-unscreen.gif" alt="" style="height:150px; margin-top: -25px; width: 180px;">
+            <ul class="supmenu" >
+                <li><a href="../html/menu.html">Home <i class="fa-solid fa-house-crack"></i>  </li></a> 
+                <li><a href="../html/menu.html" id="product">Product <i id="icon-up" class="fa fa-chevron-up" aria-hidden="true"></i></a>
+                    <ul class=sub-menu>
+                        <li><a href="../html/Iphone.html">Iphone</a></li>
+                        <li><a href="../html/samsung.html">SamSung</a></li>
+                        <li><a href="../html/accessory.html">Phụ kiện</a></li>  
+                    </ul>
+                </li>
+                <script src="../script/icondown.js"></script>
+                <li><a href="../html/sitemap.html">SiteMap <i class="fa-solid fa-earth-africa"></i> </a></li>
+                <li><a href="../html/intro.html">About Us <i class="fa-solid fa-circle-info"></i>  </a></li>
+                <li><a href="../html/contact.html">Contact <i class="fa-solid fa-mobile-screen-button"></i> </i></a></li>     
+                <li><a href="../html/member.html">Member <i class="fa-brands fa-github"></i> </a></li>     
+
+            </ul>
+            <!-- Icon -->
+            <div >
+                <ul class="icon-menu">
+                    <!-- Giỏ hàng -->
+                    <li class="header-bag">
+                        <a href="../html/cart.html">
+                            <i class="fa-solid fa-cart-arrow-down cart" ></i>  
+                            <span class="header-bag-notice">0</span>
+                        </a>
+                        <div class="header-bag-list header-bag-list-no-bag">
+                            <img src="../img/shopping-bag.png" class="shopping-bag" alt="">
+                            <span class="shopping-bag-msg">Chưa có sản phẩm</span>
+                        </div>
+                        
+                    </li>
+                    <!-- Tìm kiếm -->
+                    <li class="icon-search">
+                        <a href="#" >
+                            <i class="fa-solid fa-magnifying-glass search" id="icon-search"></i>
+                            <ul id="search-list" >
+                                <input type="text" placeholder="Tìm kiếm" id="search">
+                                <button id="btnSearch" style="width: 50px;"> Tìm </button>
+                            </ul> 
+                        </a>
+                    </li>
+                    
+                    <!-- Login -->
+                    <li>
+                        <a href="../html/formlogin.html">
+                            <i class="fa-solid fa-user-astronaut login"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="CT-Content">
+        <div class="CT-Icon">
+            <ul>
+                <li>
+                    <img class=" CT-IMain" src="../img/ctsp1.jpg" alt="" onmouseenter="chon()" />
+                </li>
+                <li>
+                    <img class=" CT-IMain" src="../img/ctsp2.png" alt="" onmouseenter="chon()" />
+                </li>
+                <li>
+                    <img class=" CT-IMain" src="../img/ctsp3.jpg" alt="" onmouseenter="chon()" />
+                </li>
+                <li>
+                    <img class=" CT-IMain" src="../img/ctsp4.png" alt="" onmouseenter="chon()" />
+                </li>
+                <li>
+                    <img class=" CT-IMain" src="../img/ctsp1.jpg" alt="" onmouseenter="chon()" />
+                </li>
+                <li>
+                    <img class=" CT-IMain" src="../img/ctsp2.png" alt="" onmouseenter="chon()" />
+                </li>
+
+                <script>
+                    function chon() {
+                            var slides = document.getElementsByClassName("CT-IMain");
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.border = "none";
+                            }
+                            for (let i = 0; i < slides.length; i++) {
+                                slides[i].addEventListener("mouseenter", function () {
+                                document.getElementById("CT-mainpic").src = slides[i].src;
+
+                                slides[i].style.border = "solid 1px red";
+                                });
+                            }
+                            }
+                </script>
+            </ul>
+        </div>
+        <div class=" CT-Imgs">
+            <img id="CT-mainpic" src="../img/ctsp1.jpg" alt="" />
+        </div>
+        <div class="CT-Regs">
+            <h4 style="text-transform: uppercase;">
+                Iphone 14 pro 128gb
+            </h4>
+            <p><img src="../img/10diem.jpg" alt="" style="width:120px;height: 50px; margin-right: 10px;"> <a href="" STYLE="COLOR:WHITE">Viết Đánh Giá</a></p>
+            <ul id="CT-TT">
+                <li>Quay video chế độ điện ảnh 4K HDR</li>
+                <li>Khả năng chống nước chống bụi chuẩn IP68</li>
+                <li>Camera trước và sau chất lượng</li>
+                <li>Pin hơn 3000 mAh</li>
+                <li>Face ID ẩn dưới màn hình</li>
+            </ul>
+            <div id="Gia">
+                <h2 style="display: inline-block">22.690.000₫</h2>
+                <span>Khuyến mãi 10%</span>
+                <p>Chỉ dành cho thành viên của <span style="font-size: 20px; font-weight: bold;"> Huyyy </span><span>20.421.000₫</span></p>
+            </div>
+
+            <ul id="CT-VC">
+                <li>Thời gian giao hàng dự kiến 2~5 ngày</li>
+                <li>Vận chuyển miễn phí</li>
+                <li>An tâm giao dịch và tận hưởng ưu đãi độc quyền</li>
+                <li>
+                    Kiểm tra tình trạng còn hàng <br />
+                    <select name="CT-CH" id="CT-CH">
+                        <option value="HCM">Hồ Chí Minh</option>
+                        <option value="HN">Hà Nội</option>
+                        <option value="DN">Đà Nẵng</option>
+                    </select>
+                    <button>Kiểm Tra</button>
+                </li>
+            </ul>
+            <div class="VC-BT">
+                
+                <a href="../html/cart.html"><button id="mua">MUA HÀNG</button> <br /></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

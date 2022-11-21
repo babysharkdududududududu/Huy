@@ -1,0 +1,43 @@
+
+@import url(https://fonts.googleapis.com/css?family=Sansita+One);
+.gradient-1 {
+    font-size: 50px;
+    font-weight: 800;
+    background-image: linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+}
+
+  
+p {
+  font-family: Arial;
+  font-size: calc(16px + 0.25vw);
+  line-height: 1.6;
+}
+p.msg:first-letter {
+    font-size: calc(60px + 0.75vw);
+    line-height: 40px;
+    color: indianred;
+    float: left;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 5px;
+    font-family: Sansita One;
+  }
+iframe{
+    margin-left: 25%;
+    width: 700px;
+}
+#vid1{
+    margin-top: 200px;
+    height: 400px;
+    width: 100%;
+}
+#vid2{
+    position: relative;
+    top: -280px;
+    left: 700px;
+    height: 270px;
+    width: 1000px;
+}

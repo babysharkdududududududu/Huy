@@ -1,0 +1,156 @@
+body{
+    background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+
+}
+p.content{
+    /* color: blue; */
+    text-align: center;
+    position: relative;
+    margin: 0px auto;
+    margin-bottom: 7px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3em; 
+    margin-top: 15px;
+    letter-spacing: 10px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    line-height: 0.9em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color:#0e1a42;
+        text-shadow: none;
+    }
+    18.2%,20%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color:#fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.service{
+    min-height: 80vh;
+    width: 100%;
+    float: left;
+    padding: 100px 0;
+    margin-bottom: 50px;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none !important; 
+}
+.pro{
+    margin-left: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    color: red;
+    position: relative;
+}
+
+.service .content{
+    float: left;
+    width: 100%;
+}
+.service .content .box{
+    width: 20%;
+    float: left;
+    padding: 15px;
+    
+}
+.service .content .box .inner{
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+.service .content .box .inner::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 0%;
+    box-sizing: border-box;
+    border-bottom: 3px transparent solid;
+    border-left: transparent 3px solid;
+    transition: 0.8s ease;
+
+}
+.service .content .box .inner::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0%;
+    height: 0%;
+    box-sizing: border-box;
+    border-top: 3px transparent solid;
+    border-right: transparent 3px solid;
+    transition: 0.8s ease;
+    
+
+}
+.service .content .box:hover .inner::after,
+.service .content .box:hover .inner::before{
+    border-color: rgb(165, 18, 18);
+    width: 100%;
+    height: 100%;
+}
+.service .content .box .inner .icon{
+    font-size: 50px;
+    color: rgba(255, 0, 36, 1);
+    transition: 0.8s ease;
+
+}
+.service .content .box:hover .inner .icon{
+    color: rgba(140, 255, 4, 1);
+}
+.service .content .box .inner .icon h3{
+    font-size: 25px;
+    font-weight: normal;
+    color:#0008;
+    margin: 10px 0;
+    margin: 20px 0;
+    
+}
+.content a .box .inner h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+/* Responsive */
+
+.submenu{
+    display: none;
+}
+#box:hover .submenu{
+    display: block;
+    margin-top: 10px;
+    /* font-size: 30px; */
+}
+
+
+
+@media(max-width:767px){
+    .service .content .box{
+        width: 100%;
+    }
+}

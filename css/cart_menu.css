@@ -1,0 +1,48 @@
+.header-bag-list-no-bag::after{
+    content: "";
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top: -22%;
+    right: 0px;
+}
+.header-bag-list-no-bag{
+    position: absolute;
+    top: 80%;
+    right: 55px;
+    background-color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.5);
+    width: 250px;
+    display: none;
+}
+
+.shopping-bag{
+    width: 150px;
+    height: 90px;
+    margin-left: 30px;
+}
+.shopping-bag-msg{
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+.header-bag:hover .header-bag-list-no-bag {
+     display: block;
+}
+/* notice*/
+.header-bag-notice{
+    position: absolute;
+    font-size: 10px;
+    padding: 2px 4px;
+    background-color: white;
+    color: red;
+    line-height: 10px;
+    border-radius: 5px;
+    top: 20%;
+    right: 60px;
+}

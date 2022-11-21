@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: auto;
+}
+.section{
+    background-image: url(../img/contact.jpg) ;
+    background-repeat: no-repeat;
+    /* background-size: ; */
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    margin-top: 100px;
+}
+.section .content{
+    margin-top: 30px;
+    position: absolute;
+    /* top: 200px; */
+    right: 100px;
+}
+.section .content .title{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    color: green;
+}
+.section .content .form .head{
+    width: 600px;
+    height: 150px;
+    background-color: white;
+}
+.section .content .form .left{
+    float: left;
+}
+.section .content .form .left .horizontal input{
+    width: 190px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+textarea{
+    width: 382px;
+    margin-top: 10px;
+}
+.section .content .form .right iframe{
+    width: 204px;
+    height: 330px;
+    margin-left: 10px;
+
+    
+}
+.section .content .form .right{
+    margin-top: -90px;
+}
+

@@ -1,0 +1,39 @@
+
+ .iphone{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    list-style: none;
+}
+
+ .iphone::before{
+    content: " ";
+    position: absolute;
+    background:  linear-gradient(to right, rgba(256,256,256,0.1) 0%, rgba(256, 256, 256, 0.4) 100%);
+    display: block;
+    z-index: 2;
+    height: 320px;
+    width: 25px;
+    left: -100px;
+    transform: skewX(-25deg);
+    
+}
+
+ :hover.iphone::before{
+    animation: shine 0.8s;
+}
+
+@keyframes shine{
+    100%{
+        left: 125%;
+    }
+    50%{
+        left: 50%;
+    }
+
+}
+
+.light{
+    position: relative;
+}
+
